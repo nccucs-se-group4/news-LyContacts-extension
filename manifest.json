@@ -1,0 +1,26 @@
+{
+  "name": "news-LyContacts-extension",
+  "version": "1.1",
+  "description": "立委聯絡資訊小幫手",
+  
+  "permissions": [
+    "tabs",
+    "http://tw.news.yahoo.com/*",
+    "https://tw.news.yahoo.com/*"
+  ],
+  
+  "background": {
+    "scripts": ["background.js"]
+  }, 
+
+  "content_scripts": [
+    {
+      "matches": ["http://tw.news.yahoo.com/*","https://tw.news.yahoo.com/*"],
+      "css": ["mystyles.css"],
+      "js": ["myscript.js","data.js"]
+    }
+  ],
+
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}
