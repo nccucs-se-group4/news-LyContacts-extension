@@ -17,7 +17,7 @@
     {
       "matches": ["http://tw.news.yahoo.com/*","https://tw.news.yahoo.com/*"],
       "css": ["mystyles.css"],
-      "js": ["myscript.js","data.js"]
+      "js": ["myscript.js","data.js","jquery-1.11.1.min.js"]
     }
   ],
 
